@@ -1,0 +1,118 @@
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .profile-avatar {
+    position: relative;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .profile-avatar ion-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .profile-avatar ion-icon {
+    font-size: 100px;
+    color: var(--ion-color-medium);
+  }
+  
+  .camera-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--ion-color-light);
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: var(--ion-color-medium);
+  }
+  
+  .profile-title {
+    color: var(--ion-color-medium);
+    margin: 0;
+  }
+  
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .section-header ion-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--ion-color-primary);
+  }
+  
+  .section-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .add-skill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .add-skill ion-input {
+    border: 1px dashed var(--ion-color-medium);
+    border-radius: 16px;
+    --padding-start: 1rem;
+    max-width: 150px;
+  }
+  
+  .experience-item,
+  .education-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .experience-item h4,
+  .education-item h4 {
+    margin: 0;
+    color: var(--ion-color-dark);
+    font-size: 1.1rem;
+  }
+  
+  .experience-item p,
+  .education-item p {
+    margin: 0.2rem 0;
+    color: var(--ion-color-medium);
+  }
+  
+  .duration,
+  .year {
+    font-size: 0.9rem;
+  }
+  
+  .ion-input-enabled {
+    --background: var(--ion-color-light);
+    --padding-start: 1rem;
+    border-radius: 4px;
+  }
+  
+  /* Dark mode adjustments */
+  @media (prefers-color-scheme: dark) {
+    .experience-item h4,
+    .education-item h4 {
+      color: var(--ion-color-light);
+    }
+  
+    .ion-input-enabled {
+      --background: var(--ion-color-dark);
+    }
+  }

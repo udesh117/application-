@@ -1,0 +1,197 @@
+:root {
+  --dark-bg: #000000;
+  --dark-surface: #121212;
+  --dark-primary: #0095f6;
+  --dark-border: #262626;
+  --dark-text: #ffffff;
+  --dark-text-secondary: #8e8e8e;
+  --dark-error: #ed4956;
+  --dark-success: #2ecc71;
+  --ion-color-primary: var(--dark-primary);
+}
+
+.linkedin-theme {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* Header Styles */
+ion-header ion-toolbar {
+  --background: var(--dark-bg);
+  --color: var(--dark-text);
+  --border-color: var(--dark-border);
+}
+
+/* Content Styles */
+.application-form {
+  padding: 16px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+/* Form Groups */
+.form-group {
+  background: var(--dark-surface);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid var(--dark-border);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--dark-text);
+}
+
+.section-title ion-icon {
+  font-size: 20px;
+  color: var(--dark-primary);
+}
+
+/* Input Containers */
+.input-container {
+  margin-bottom: 16px;
+}
+
+.input-container:last-child {
+  margin-bottom: 0;
+}
+
+.input-container ion-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--dark-text);
+  font-size: 14px;
+}
+
+.input-container ion-input,
+.input-container ion-textarea {
+  --background: var(--dark-bg);
+  --color: var(--dark-text);
+  --placeholder-color: var(--dark-text-secondary);
+  --border-color: var(--dark-border);
+  --padding-start: 16px;
+  --padding-end: 16px;
+  border: 1px solid var(--dark-border);
+  border-radius: 8px;
+  margin-top: 4px;
+}
+
+/* File Upload */
+.file-upload {
+  border: 2px dashed var(--dark-border);
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-upload:hover {
+  border-color: var(--dark-primary);
+  background: rgba(0, 149, 246, 0.1);
+}
+
+.file-upload ion-icon {
+  font-size: 32px;
+  color: var(--dark-primary);
+  margin-bottom: 8px;
+}
+
+.upload-text {
+  color: var(--dark-text-secondary);
+  font-size: 14px;
+}
+
+/* Error States */
+.has-error {
+  border-color: var(--dark-error) !important;
+}
+
+.error-message {
+  color: var(--dark-error);
+  font-size: 12px;
+  margin-top: 4px;
+  padding-left: 4px;
+}
+
+/* Button Container */
+.button-container {
+  margin-top: 16px;
+  background: var(--dark-surface);
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid var(--dark-border);
+}
+
+/* Submit Button */
+.submit-button {
+  --background: var(--dark-primary);
+  --background-hover: var(--dark-primary);
+  --background-activated: var(--dark-primary);
+  --border-radius: 8px;
+  --color: var(--dark-text);
+  margin: 0;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.button-spinner {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Toast Styles */
+ion-toast {
+  --background: var(--dark-surface);
+  --color: var(--dark-text);
+  --border-radius: 8px;
+  --button-color: var(--dark-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .application-form {
+    padding: 12px;
+  }
+
+  .form-group {
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+
+  .button-container {
+    margin-top: 12px;
+  }
+
+  .submit-button {
+    height: 40px;
+    font-size: 15px;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-text-secondary);
+}

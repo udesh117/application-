@@ -1,0 +1,248 @@
+:root {
+  /* Core theme colors */
+  --ion-background-color: #0d1117;
+  --ion-background-color-rgb: 13, 17, 23;
+  --ion-text-color: #e6edf3;
+  --ion-text-color-rgb: 230, 237, 243;
+  
+  /* Custom theme colors */
+  --color-primary: #58a6ff;
+  --color-secondary: #1f6feb;
+  --color-success: #3fb950;
+  --color-warning: #d29922;
+  --color-danger: #f85149;
+  --color-surface: #161b22;
+  --color-surface-light: #21262d;
+  --color-border: #30363d;
+  --color-text-muted: #8b949e;
+  --color-link: #58a6ff;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #1f6feb 0%, #58a6ff 100%);
+  --gradient-surface: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+}
+
+/* Global styles */
+body {
+  background: var(--ion-background-color);
+  color: var(--ion-text-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Card styles */
+ion-card {
+  --background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ion-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+ion-card-header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+ion-card-title {
+  color: var(--ion-text-color);
+  font-weight: 600;
+}
+
+ion-card-subtitle {
+  color: var(--color-text-muted);
+}
+
+/* Button styles */
+ion-button {
+  --background: var(--color-primary);
+  --background-hover: var(--color-secondary);
+  --background-activated: var(--color-secondary);
+  --box-shadow: none;
+  --border-radius: 6px;
+  font-weight: 500;
+  text-transform: none;
+  transition: filter 0.2s ease;
+}
+
+ion-button:hover {
+  filter: brightness(1.1);
+}
+
+ion-button.button-outline {
+  --border-color: var(--color-primary);
+  --color: var(--color-primary);
+}
+
+/* List styles */
+ion-list {
+  background: transparent;
+}
+
+ion-item {
+  --background: var(--color-surface);
+  --background-hover: var(--color-surface-light);
+  --border-color: var(--color-border);
+  --color: var(--ion-text-color);
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+/* Search bar */
+ion-searchbar {
+  --background: var(--color-surface);
+  --box-shadow: none;
+  --placeholder-color: var(--color-text-muted);
+  --icon-color: var(--color-text-muted);
+  --border-radius: 8px;
+  padding: 0;
+}
+
+/* Chips */
+ion-chip {
+  --background: var(--color-surface-light);
+  --color: var(--color-primary);
+  border: 1px solid var(--color-border);
+}
+
+/* Progress bar */
+ion-progress-bar {
+  --background: var(--color-surface-light);
+  --progress-background: var(--color-primary);
+}
+
+/* Tabs */
+ion-tab-bar {
+  --background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: 8px 0;
+}
+
+ion-tab-button {
+  --color: var(--color-text-muted);
+  --color-selected: var(--color-primary);
+}
+
+/* Form elements */
+ion-input, ion-textarea {
+  --background: var(--color-surface);
+  --color: var(--ion-text-color);
+  --placeholder-color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  margin: 4px 0;
+}
+
+ion-input:focus, ion-textarea:focus {
+  border-color: var(--color-primary);
+}
+
+/* Select */
+ion-select {
+  --placeholder-color: var(--color-text-muted);
+}
+
+ion-select-option {
+  background: var(--color-surface);
+  color: var(--ion-text-color);
+}
+
+/* Modal */
+ion-modal {
+  --background: var(--ion-background-color);
+  --border-radius: 12px;
+}
+
+.modal-content {
+  background: var(--color-surface);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Toast */
+ion-toast {
+  --background: var(--color-surface);
+  --color: var(--ion-text-color);
+  --border-radius: 8px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Loading indicator */
+ion-loading {
+  --background: var(--color-surface);
+  --spinner-color: var(--color-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-light);
+  border-radius: 5px;
+  border: 2px solid var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Custom utility classes */
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.surface-gradient {
+  background: var(--gradient-surface);
+}
+
+.blur-backdrop {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Dark mode optimizations */
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background: var(--color-primary);
+    color: var(--ion-background-color);
+  }
+  
+  img {
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
+  
+  img:hover {
+    opacity: 1;
+  }
+}
+
+/* iOS safe areas */
+.ios {
+  --ion-safe-area-top: env(safe-area-inset-top);
+  --ion-safe-area-bottom: env(safe-area-inset-bottom);
+  padding-top: var(--ion-safe-area-top);
+  padding-bottom: var(--ion-safe-area-bottom);
+}

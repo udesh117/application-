@@ -1,0 +1,133 @@
+.filters-card {
+  margin: 0;
+  border-radius: 12px;
+  background: var(--dark-surface);
+  border: 1px solid var(--dark-border);
+}
+
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.filters-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 16px;
+  color: var(--dark-text);
+  font-weight: 600;
+}
+
+.filters-header ion-icon {
+  color: var(--dark-primary);
+  font-size: 20px;
+}
+
+.filter-content {
+  padding: 16px;
+}
+
+.selected-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  background: var(--dark-bg);
+  border-radius: 8px;
+  min-height: 48px;
+}
+
+ion-accordion {
+  margin-bottom: 8px;
+  background: var(--dark-surface);
+  border: 1px solid var(--dark-border);
+  border-radius: 8px;
+}
+
+ion-accordion:last-child {
+  margin-bottom: 0;
+}
+
+ion-accordion ion-item {
+  --background: var(--dark-surface);
+  --color: var(--dark-text);
+  --border-color: var(--dark-border);
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --border-radius: 8px;
+}
+
+ion-accordion ion-item::part(native) {
+  background: var(--dark-surface);
+}
+
+ion-accordion ion-icon {
+  margin-right: 12px;
+  color: var(--dark-primary);
+  font-size: 18px;
+}
+
+ion-accordion-group {
+  background: var(--dark-surface);
+}
+
+/* Chip styles */
+ion-chip {
+  --background: var(--dark-bg);
+  --color: var(--dark-text);
+  border: 1px solid var(--dark-border);
+}
+
+ion-chip:hover {
+  --background: var(--dark-border);
+}
+
+ion-chip ion-icon {
+  color: var(--dark-text-secondary);
+}
+
+/* List styles */
+ion-list {
+  background: var(--dark-surface);
+  padding: 0;
+}
+
+ion-item {
+  --background: var(--dark-surface);
+  --color: var(--dark-text);
+  --border-color: var(--dark-border);
+}
+
+ion-item:hover {
+  --background: var(--dark-bg);
+}
+
+/* Checkbox styles */
+ion-checkbox {
+  --background: var(--dark-bg);
+  --background-checked: var(--dark-primary);
+  --border-color: var(--dark-border);
+  --border-color-checked: var(--dark-primary);
+  --checkmark-color: var(--dark-text);
+}
+
+/* Range styles */
+ion-range {
+  --bar-background: var(--dark-border);
+  --bar-background-active: var(--dark-primary);
+  --knob-background: var(--dark-primary);
+  --pin-background: var(--dark-primary);
+  --pin-color: var(--dark-text);
+}
+
+/* Animation */
+.filters-card,
+ion-accordion,
+ion-chip {
+  transition: all 0.2s ease-in-out;
+}
